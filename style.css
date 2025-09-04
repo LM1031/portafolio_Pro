@@ -1,0 +1,211 @@
+/* General*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Header */
+header {
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+/* Hero */
+.hero {
+    background: url("img/imagen-fondo.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-texto {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #d62828;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Sobre Nosotros */
+.about-section {
+    padding: 120px 50px 50px 50px;
+    background: linear-gradient(to bottom, #fff3e0, #fff8f0);
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #d62828;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor de tarjetas */
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+/* Cada tarjeta individual */
+.about-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #d62828;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+.contact-info {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* Menú  */
+.menu-section {
+    padding: 120px 50px 50px 50px;
+    text-align: center;
+    background-color: #fff3e0;
+}
+
+.menu-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #d62828;
+}
+
+/* Precios generales */
+.precios-generales {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.precios-generales h4 {
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.precios-generales p {
+    font-weight: bold;
+    color: #d62828;
+}
+
+/* Grid de pizzas */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual de pizza */
+.pizza-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.pizza-card:hover {
+    transform: scale(1.05);
+}
+
+.pizza-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pizza-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000;
+}
